@@ -1,4 +1,4 @@
-# TestCon Europe 2025 - Workshop | Practical Visual Regression Testing: A Hands-On Guide with Modern Tools
+# AutomationSTAR 2025 - Workshop | Practical Visual Regression Testing: A Hands-On Guide with Modern Tools
 
 **Dear Participant**,
 
@@ -8,8 +8,8 @@ To verify the environment we’ll be working on during the workshop, please make
 
 ## Useful Links
 
-- Notes: https://docs.google.com/document/d/1JfIuWjgBbResKPTzrceji3g5GSt9QvJpXweh9UNjCpE/edit?usp=sharing
-
+- Notes: https://docs.google.com/document/d/1PDAyY01PzlNctn_UJKa21fX4ZkNREKPuMXjP9nm3Zaw/edit?tab=t.0
+  
 ## Requirements
 
 ### Tools
@@ -34,8 +34,8 @@ Please install:
 
 ### Git:
 
-- Fork the repository: https://github.com/tklepacki/testcon-vrt to your private GitHub account. If you don’t have a GitHub account, create one beforehand.
-- Clone the forked repository (from your private account) `git clone https://github.com/tklepacki/testcon-vrt.git`
+- Fork the repository: https://github.com/tklepacki/automationstar-vrt to your private GitHub account. If you don’t have a GitHub account, create one beforehand.
+- Clone the forked repository (from your private account) `git clone https://github.com/tklepacki/automationstar-vrt.git`
 - Enter the repository folder and make sure the project has been downloaded.
 
 ### IDE
