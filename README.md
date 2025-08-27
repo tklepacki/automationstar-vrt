@@ -1,4 +1,4 @@
-# AutomationSTAR 2025 - Workshop | Practical Visual Regression Testing: A Hands-On Guide with Modern Tools
+# AutomationSTAR 2025 - Workshop | Visual Regression Testing: A Practical Guide
 
 **Dear Participant**,
 
