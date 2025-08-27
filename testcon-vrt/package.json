@@ -1,0 +1,25 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "docker:build": "docker build -t screenshotserver -f playwright/Dockerfile .",
+    "docker:run": "docker run --rm -i --name screenshotserver -p 9292:9292 screenshotserver"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/mochawesome": "^6.2.4",
+    "@types/node": "^24.0.13",
+    "cypress": "^14.5.1",
+    "@playwright/test": "^1.54.0",
+    "mochawesome": "^7.1.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  }
+}

@@ -1,0 +1,1 @@
+export const inactivePace = () => cy.get('.pace.pace-inactive', { timeout: 60000 })
