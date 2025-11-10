@@ -1,0 +1,8 @@
+{
+    "apiUrl": "http://localhost:4200",
+    "apiKey": "DEFAULTUSERAPIKEYTOBECHANGED",
+    "project": "Default project",
+    "branchName": "feature/branch-1",
+    "ciBuildId": "Build-5",
+    "enableSoftAssert": false
+}
