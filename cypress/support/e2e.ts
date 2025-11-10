@@ -16,6 +16,7 @@
 import './commands'
 import addContext from 'mochawesome/addContext'
 import path from "path";
+import { addMatchImageSnapshotCommand } from '@simonsmith/cypress-image-snapshot/command';
 
 beforeEach(() => {
   cy.clearCookies();
@@ -24,6 +25,8 @@ beforeEach(() => {
     win.sessionStorage.clear();
   });
 });
+
+addMatchImageSnapshotCommand();
 
 Cypress.on("test:after:run", (test, runnable) => {
   if (test.state === "failed" && runnable) {
@@ -53,4 +56,11 @@ Cypress.on("test:after:run", (test, runnable) => {
     // @ts-ignore
     addContext({ test }, mochaReportPath);
   }
+});
+
+Cypress.on('uncaught:exception', (err) => {
+  if (err.message.includes('ResizeObserver loop completed with undelivered notifications')) {
+    return false;
+  }
+  return true;
 });

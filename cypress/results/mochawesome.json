@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-11-10T08:53:47.087Z",
+    "end": "2025-11-10T08:54:07.412Z",
+    "duration": 20325,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "afd0a545-03b5-4d52-ab49-77b9868bc646",
+      "title": "",
+      "fullFile": "cypress/tests/tonnageList.visual.ts",
+      "file": "cypress/tests/tonnageList.visual.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0d445483-6dae-4796-b7c7-11130cac5de5",
+          "title": "Tonnage List - Visual Tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Tonnage List - Grid",
+              "fullTitle": "Tonnage List - Visual Tests Tonnage List - Grid",
+              "timedOut": null,
+              "duration": 20283,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.intercept('GET', '/api/tonnageList?*').as('getTonnageList');\ncy.intercept('POST', '/api/tonnageList/tce?*').as('getTCE');\ncy.visit('/');\ncommon.inactivePace().should('exist');\ncy.get('#enterEmailFormEmail', { timeout: 10000 }).should('be.visible').type('user1@stresstest.com', { delay: 100 });\ncy.get('#enterEmailFormSubmit').should('be.visible').click();\ncy.get('#password', { timeout: 10000 }).should('be.visible').type('Qweasd12@', { delay: 100 });\ncy.get('#submitLogin').should('be.visible').click();\ncy.contains('button', 'Accept').click();\ncy.get(\"div[class*='SideNavCollapse_sideBar_']\", { timeout: 30000 }).should('be.visible');\ncy.get(\"#sideNav-Tab--Tonnage-List\").click();\ncommon.inactivePace().should('exist');\ncy.wait(['@getTonnageList', '@getTCE']);\ncy.waitForDomToBeReady();\ncy.matchImageSnapshot({\n    blackout: [\n        '.tw-flex-shrink-0'\n    ]\n});",
+              "err": {},
+              "uuid": "f6d3e4f7-9186-453b-aa17-0a315be05bb1",
+              "parentUUID": "0d445483-6dae-4796-b7c7-11130cac5de5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f6d3e4f7-9186-453b-aa17-0a315be05bb1"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 20283,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": true,
+        "html": true,
+        "reportTitle": "Cypress Test Report",
+        "json": true,
+        "inlineAssets": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}

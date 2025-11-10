@@ -1,4 +1,5 @@
 import { defineConfig } from 'cypress'
+import { addMatchImageSnapshotPlugin } from '@simonsmith/cypress-image-snapshot/plugin';
 
 export default defineConfig({
   reporter: 'mochawesome',
@@ -12,6 +13,7 @@ export default defineConfig({
   },
   e2e: {
     setupNodeEvents(on, config) {
+      addMatchImageSnapshotPlugin(on);
 
       on('before:browser:launch', (browser, launchOptions) => {
         const width = 1600;
