@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/playwright:v1.54.0
+FROM mcr.microsoft.com/playwright:v1.56.0
 
 WORKDIR /app
 
@@ -8,7 +8,7 @@ RUN npm install -g npm@latest
 
 RUN npm install
 
-RUN npm install @playwright/test@1.54.0
+RUN npm install @playwright/test@1.56.0
 
 RUN npx playwright install
 
