@@ -10,6 +10,7 @@ To verify the environment we’ll be working on during the workshop, please make
 
 - Notes: https://docs.google.com/document/d/1PDAyY01PzlNctn_UJKa21fX4ZkNREKPuMXjP9nm3Zaw/edit?tab=t.0
 - Exercises and Solutions: https://drive.google.com/drive/folders/1zL_WivMuV6jvx-OnbMwdWW82m-xaadXb?usp=sharing
+- Presentation: https://drive.google.com/file/d/1hjCSLsthhHXmSgD9BseaJGltDR5mjFzb/view?usp=sharing
   
 ## Requirements
 
